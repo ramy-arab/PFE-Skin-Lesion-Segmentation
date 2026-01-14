@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  .header {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    color: #2563eb;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .description {
+    font-size: 12px;
+    color: #6b7280;
+  }
+  
+  /* Upload Box */
+  .upload-box {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .upload-box:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Drag and Drop Area */
+  .drop-area {
+    height: 180px;
+    border: 2px dashed #94a3b8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f3f4f6;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .drop-area.dragging {
+    background-color: #e0f2fe;
+    border-color: #2563eb;
+  }
+  
+  .upload-label {
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .upload-icon {
+    color: #3b82f6;
+    margin-bottom: 8px;
+  }
+  
+  .hidden-input {
+    display: none;
+  }
+  
+  /* Loading
+  
